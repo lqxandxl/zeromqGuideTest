@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liqixin/zmqtest/server2-c
+CMAKE_SOURCE_DIR = /home/liqixin/zeromqGuideTest/server2-c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liqixin/zmqtest/server2-c/build
+CMAKE_BINARY_DIR = /home/liqixin/zeromqGuideTest/server2-c/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/server.dir/depend.make
@@ -54,17 +54,17 @@ include CMakeFiles/server.dir/flags.make
 
 CMakeFiles/server.dir/server.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/server.cpp.o: ../server.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/liqixin/zmqtest/server2-c/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/liqixin/zeromqGuideTest/server2-c/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/server.dir/server.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/server.cpp.o -c /home/liqixin/zmqtest/server2-c/server.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/server.cpp.o -c /home/liqixin/zeromqGuideTest/server2-c/server.cpp
 
 CMakeFiles/server.dir/server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/server.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/liqixin/zmqtest/server2-c/server.cpp > CMakeFiles/server.dir/server.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/liqixin/zeromqGuideTest/server2-c/server.cpp > CMakeFiles/server.dir/server.cpp.i
 
 CMakeFiles/server.dir/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/server.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/liqixin/zmqtest/server2-c/server.cpp -o CMakeFiles/server.dir/server.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/liqixin/zeromqGuideTest/server2-c/server.cpp -o CMakeFiles/server.dir/server.cpp.s
 
 CMakeFiles/server.dir/server.cpp.o.requires:
 .PHONY : CMakeFiles/server.dir/server.cpp.o.requires
@@ -100,6 +100,6 @@ CMakeFiles/server.dir/clean:
 .PHONY : CMakeFiles/server.dir/clean
 
 CMakeFiles/server.dir/depend:
-	cd /home/liqixin/zmqtest/server2-c/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liqixin/zmqtest/server2-c /home/liqixin/zmqtest/server2-c /home/liqixin/zmqtest/server2-c/build /home/liqixin/zmqtest/server2-c/build /home/liqixin/zmqtest/server2-c/build/CMakeFiles/server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/liqixin/zeromqGuideTest/server2-c/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liqixin/zeromqGuideTest/server2-c /home/liqixin/zeromqGuideTest/server2-c /home/liqixin/zeromqGuideTest/server2-c/build /home/liqixin/zeromqGuideTest/server2-c/build /home/liqixin/zeromqGuideTest/server2-c/build/CMakeFiles/server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/server.dir/depend
 

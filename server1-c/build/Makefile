@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liqixin/zmqtest/server1-c
+CMAKE_SOURCE_DIR = /home/liqixin/zeromqGuideTest/server1-c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liqixin/zmqtest/server1-c/build
+CMAKE_BINARY_DIR = /home/liqixin/zeromqGuideTest/server1-c/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liqixin/zmqtest/server1-c/build/CMakeFiles /home/liqixin/zmqtest/server1-c/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liqixin/zeromqGuideTest/server1-c/build/CMakeFiles /home/liqixin/zeromqGuideTest/server1-c/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liqixin/zmqtest/server1-c/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liqixin/zeromqGuideTest/server1-c/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -138,6 +138,30 @@ server.cpp.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server.cpp.s
 .PHONY : server.cpp.s
 
+test.pro.pb.o: test.pro.pb.cc.o
+.PHONY : test.pro.pb.o
+
+# target to build an object file
+test.pro.pb.cc.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/test.pro.pb.cc.o
+.PHONY : test.pro.pb.cc.o
+
+test.pro.pb.i: test.pro.pb.cc.i
+.PHONY : test.pro.pb.i
+
+# target to preprocess a source file
+test.pro.pb.cc.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/test.pro.pb.cc.i
+.PHONY : test.pro.pb.cc.i
+
+test.pro.pb.s: test.pro.pb.cc.s
+.PHONY : test.pro.pb.s
+
+# target to generate assembly for a file
+test.pro.pb.cc.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/test.pro.pb.cc.s
+.PHONY : test.pro.pb.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -150,6 +174,9 @@ help:
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"
+	@echo "... test.pro.pb.o"
+	@echo "... test.pro.pb.i"
+	@echo "... test.pro.pb.s"
 .PHONY : help
 
 

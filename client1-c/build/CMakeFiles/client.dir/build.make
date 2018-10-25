@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liqixin/zmqtest/client1-c
+CMAKE_SOURCE_DIR = /home/liqixin/zeromqGuideTest/client1-c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liqixin/zmqtest/client1-c/build
+CMAKE_BINARY_DIR = /home/liqixin/zeromqGuideTest/client1-c/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/client.dir/depend.make
@@ -54,17 +54,17 @@ include CMakeFiles/client.dir/flags.make
 
 CMakeFiles/client.dir/client.cpp.o: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/client.cpp.o: ../client.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/liqixin/zmqtest/client1-c/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/liqixin/zeromqGuideTest/client1-c/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/client.dir/client.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/client.dir/client.cpp.o -c /home/liqixin/zmqtest/client1-c/client.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/client.dir/client.cpp.o -c /home/liqixin/zeromqGuideTest/client1-c/client.cpp
 
 CMakeFiles/client.dir/client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/client.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/liqixin/zmqtest/client1-c/client.cpp > CMakeFiles/client.dir/client.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/liqixin/zeromqGuideTest/client1-c/client.cpp > CMakeFiles/client.dir/client.cpp.i
 
 CMakeFiles/client.dir/client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/client.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/liqixin/zmqtest/client1-c/client.cpp -o CMakeFiles/client.dir/client.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/liqixin/zeromqGuideTest/client1-c/client.cpp -o CMakeFiles/client.dir/client.cpp.s
 
 CMakeFiles/client.dir/client.cpp.o.requires:
 .PHONY : CMakeFiles/client.dir/client.cpp.o.requires
@@ -75,14 +75,39 @@ CMakeFiles/client.dir/client.cpp.o.provides: CMakeFiles/client.dir/client.cpp.o.
 
 CMakeFiles/client.dir/client.cpp.o.provides.build: CMakeFiles/client.dir/client.cpp.o
 
+CMakeFiles/client.dir/test.pro.pb.cc.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/test.pro.pb.cc.o: ../test.pro.pb.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/liqixin/zeromqGuideTest/client1-c/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/client.dir/test.pro.pb.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/client.dir/test.pro.pb.cc.o -c /home/liqixin/zeromqGuideTest/client1-c/test.pro.pb.cc
+
+CMakeFiles/client.dir/test.pro.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/test.pro.pb.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/liqixin/zeromqGuideTest/client1-c/test.pro.pb.cc > CMakeFiles/client.dir/test.pro.pb.cc.i
+
+CMakeFiles/client.dir/test.pro.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/test.pro.pb.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/liqixin/zeromqGuideTest/client1-c/test.pro.pb.cc -o CMakeFiles/client.dir/test.pro.pb.cc.s
+
+CMakeFiles/client.dir/test.pro.pb.cc.o.requires:
+.PHONY : CMakeFiles/client.dir/test.pro.pb.cc.o.requires
+
+CMakeFiles/client.dir/test.pro.pb.cc.o.provides: CMakeFiles/client.dir/test.pro.pb.cc.o.requires
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/test.pro.pb.cc.o.provides.build
+.PHONY : CMakeFiles/client.dir/test.pro.pb.cc.o.provides
+
+CMakeFiles/client.dir/test.pro.pb.cc.o.provides.build: CMakeFiles/client.dir/test.pro.pb.cc.o
+
 # Object files for target client
 client_OBJECTS = \
-"CMakeFiles/client.dir/client.cpp.o"
+"CMakeFiles/client.dir/client.cpp.o" \
+"CMakeFiles/client.dir/test.pro.pb.cc.o"
 
 # External object files for target client
 client_EXTERNAL_OBJECTS =
 
 client: CMakeFiles/client.dir/client.cpp.o
+client: CMakeFiles/client.dir/test.pro.pb.cc.o
 client: CMakeFiles/client.dir/build.make
 client: CMakeFiles/client.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable client"
@@ -93,6 +118,7 @@ CMakeFiles/client.dir/build: client
 .PHONY : CMakeFiles/client.dir/build
 
 CMakeFiles/client.dir/requires: CMakeFiles/client.dir/client.cpp.o.requires
+CMakeFiles/client.dir/requires: CMakeFiles/client.dir/test.pro.pb.cc.o.requires
 .PHONY : CMakeFiles/client.dir/requires
 
 CMakeFiles/client.dir/clean:
@@ -100,6 +126,6 @@ CMakeFiles/client.dir/clean:
 .PHONY : CMakeFiles/client.dir/clean
 
 CMakeFiles/client.dir/depend:
-	cd /home/liqixin/zmqtest/client1-c/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liqixin/zmqtest/client1-c /home/liqixin/zmqtest/client1-c /home/liqixin/zmqtest/client1-c/build /home/liqixin/zmqtest/client1-c/build /home/liqixin/zmqtest/client1-c/build/CMakeFiles/client.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/liqixin/zeromqGuideTest/client1-c/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liqixin/zeromqGuideTest/client1-c /home/liqixin/zeromqGuideTest/client1-c /home/liqixin/zeromqGuideTest/client1-c/build /home/liqixin/zeromqGuideTest/client1-c/build /home/liqixin/zeromqGuideTest/client1-c/build/CMakeFiles/client.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/client.dir/depend
 

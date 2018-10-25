@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/liqixin/zmqtest/server2-c/server.cpp" "/home/liqixin/zmqtest/server2-c/build/CMakeFiles/server.dir/server.cpp.o"
+  "/home/liqixin/zeromqGuideTest/server2-c/server.cpp" "/home/liqixin/zeromqGuideTest/server2-c/build/CMakeFiles/server.dir/server.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

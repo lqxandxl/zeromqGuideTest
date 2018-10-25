@@ -7,6 +7,9 @@
 #include <iostream>
 #include <string>
 
+
+#include "test.pro.pb.h"
+
 int main (void)
 {
     //printf ("Connecting to hello world server…\n");
@@ -18,7 +21,16 @@ int main (void)
     for (request_nbr = 0; request_nbr != 10; request_nbr++) {
         char buffer [10];
         //printf ("Sending Hello %d…\n", request_nbr);
-        std::string sendstring = "Hello";
+        std::string sendstring;
+        
+
+        //pb
+        tutorial::Person person;
+        person.set_name("liqixin");
+        person.set_id(381);
+        person.set_email("835347829@qq.com");
+        person.SerializeToString(&sendstring);
+        //pb
         char * sendstr =(char *)sendstring.c_str();
         //zmq_send (requester, "Hello", 5, 0);
         //这个地方很可能是结尾到底有没有/0造成的问题。如果size没有加1，zmq会在后面加一个结尾。而且这个结尾是瞎加的。所以size+1是最合适的。

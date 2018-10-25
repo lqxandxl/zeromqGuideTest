@@ -1,1 +1,1 @@
-/usr/bin/c++       CMakeFiles/server.dir/server.cpp.o  -o server  -L/home/liqixin/zmq/lib -rdynamic -lzmq -Wl,-rpath,/home/liqixin/zmq/lib 
+/usr/bin/c++       CMakeFiles/server.dir/server.cpp.o CMakeFiles/server.dir/test.pro.pb.cc.o  -o server  -L/home/liqixin/zmq/lib  -L/home/liqixin/pb/lib -rdynamic -lzmq -lprotobuf -lprotobuf-lite -lprotoc -Wl,-rpath,/home/liqixin/zmq/lib:/home/liqixin/pb/lib 

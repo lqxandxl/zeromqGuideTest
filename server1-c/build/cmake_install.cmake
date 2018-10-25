@@ -1,4 +1,4 @@
-# Install script for directory: /home/liqixin/zmqtest/server1-c
+# Install script for directory: /home/liqixin/zeromqGuideTest/server1-c
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/liqixin/zmqtest/server1-c/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/liqixin/zeromqGuideTest/server1-c/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/liqixin/zmqtest/server1-c/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/liqixin/zeromqGuideTest/server1-c/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

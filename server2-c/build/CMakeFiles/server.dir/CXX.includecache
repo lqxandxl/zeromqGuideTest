@@ -6,29 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/liqixin/zmq/include/zmq.h
-errno.h
--
-stddef.h
--
-stdio.h
--
-winsock2.h
--
-inttypes.h
--
-stdint.h
--
-
-/home/liqixin/zmqtest/server2-c/server.cpp
+/home/liqixin/zeromqGuideTest/server2-c/server.cpp
 iostream
 -
 string
 -
 zhelpers.h
-/home/liqixin/zmqtest/server2-c/zhelpers.h
+/home/liqixin/zeromqGuideTest/server2-c/zhelpers.h
 
-/home/liqixin/zmqtest/server2-c/zhelpers.h
+/home/liqixin/zeromqGuideTest/server2-c/zhelpers.h
 zmq.h
 -
 assert.h
@@ -50,5 +36,19 @@ time.h
 sys/time.h
 -
 windows.h
+-
+
+/home/liqixin/zmq/include/zmq.h
+errno.h
+-
+stddef.h
+-
+stdio.h
+-
+winsock2.h
+-
+inttypes.h
+-
+stdint.h
 -
 

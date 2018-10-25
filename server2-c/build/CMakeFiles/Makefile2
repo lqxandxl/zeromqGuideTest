@@ -50,10 +50,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liqixin/zmqtest/server2-c
+CMAKE_SOURCE_DIR = /home/liqixin/zeromqGuideTest/server2-c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liqixin/zmqtest/server2-c/build
+CMAKE_BINARY_DIR = /home/liqixin/zeromqGuideTest/server2-c/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/server.dir
@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = /home/liqixin/zmqtest/server2-c/build
 CMakeFiles/server.dir/all:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/liqixin/zmqtest/server2-c/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/liqixin/zeromqGuideTest/server2-c/build/CMakeFiles  1
 	@echo "Built target server"
 .PHONY : CMakeFiles/server.dir/all
 
@@ -72,9 +72,9 @@ all: CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liqixin/zmqtest/server2-c/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liqixin/zeromqGuideTest/server2-c/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liqixin/zmqtest/server2-c/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liqixin/zeromqGuideTest/server2-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/server.dir/rule
 
 # Convenience name for target.

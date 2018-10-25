@@ -50,10 +50,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liqixin/zmqtest/client1-c
+CMAKE_SOURCE_DIR = /home/liqixin/zeromqGuideTest/client1-c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liqixin/zmqtest/client1-c/build
+CMAKE_BINARY_DIR = /home/liqixin/zeromqGuideTest/client1-c/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/client.dir
@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = /home/liqixin/zmqtest/client1-c/build
 CMakeFiles/client.dir/all:
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/depend
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/liqixin/zmqtest/client1-c/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/liqixin/zeromqGuideTest/client1-c/build/CMakeFiles  1 2
 	@echo "Built target client"
 .PHONY : CMakeFiles/client.dir/all
 
@@ -72,9 +72,9 @@ all: CMakeFiles/client.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liqixin/zmqtest/client1-c/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liqixin/zeromqGuideTest/client1-c/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liqixin/zmqtest/client1-c/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liqixin/zeromqGuideTest/client1-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/client.dir/rule
 
 # Convenience name for target.
