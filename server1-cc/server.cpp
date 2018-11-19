@@ -22,8 +22,9 @@ int main (void)
         char buffer [100];
         int index = zmq_recv (responder, buffer, 100, 0);
         std::string res(buffer);
-        cout<<"zmq_recv res is "<<index<<endl;
-        std::cout<<"res size is "<<res.size()<<std::endl;
+        cout<<"zmq_recv res is "<<index<<endl;  //same 28
+        buffer[index] = 0;
+        std::cout<<"res size is "<<res.size()<<std::endl;  // 28
         // for(int i=0;i<res.size();i++){
         //     std::cout<<"res[i] is "<<res[i]<<std::endl;
         // }
