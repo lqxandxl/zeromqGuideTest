@@ -25,16 +25,8 @@ int main (void)
         cout<<"zmq_recv res is "<<index<<endl;  //same 28
         buffer[index] = 0;
         std::cout<<"res size is "<<res.size()<<std::endl;  // 28
-        // for(int i=0;i<res.size();i++){
-        //     std::cout<<"res[i] is "<<res[i]<<std::endl;
-        // }
         std::cout<<"res is "<<res<<std::endl;
-
-        //printf ("Received Hello\n");
         sleep (1);          //  Do some 'work'
-        
-
-
 	    zmq_send (responder, "World",5, 0);
     }
     return 0;

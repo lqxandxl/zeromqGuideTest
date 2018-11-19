@@ -10,7 +10,6 @@ using namespace std;
 
 int main (void)
 {
-    //printf ("Connecting to hello world server…\n");
     void *context = zmq_ctx_new ();
     void *requester = zmq_socket (context, ZMQ_REQ);
     zmq_connect (requester, "tcp://localhost:5555");
@@ -23,12 +22,11 @@ int main (void)
         int len1 = sendstring.size();
         cout<<"sendstr length is"<<len1<<endl;
         char * sendstr =(char *)sendstring.c_str();
-        //zmq_send (requester, "Hello", 5, 0);
-        zmq_send (requester, sendstr, sendstring.size(), 0);
-        zmq_recv (requester, buffer, 10, 0);
-        std::string res(buffer); //收到字符串的时候，即使服务端返回的长度是5，末尾会多一个未知的字符。
+        zmq_send (requester, sendstr, sendstring.size(), 0); //发的时候原则是发多少，写多少的长度。
+        int index = zmq_recv (requester, buffer, 10, 0); //收的原则是，留下足够大的缓冲区，然后在末尾加入null的结尾。
+        buffer[index]=0;
+        std::string res(buffer); 
         std::cout<<"res is "<<res<<std::endl;
-        std::cout<<"res size is "<<res.size()<<std::endl;
     }
     zmq_close (requester);
     zmq_ctx_destroy (context);
