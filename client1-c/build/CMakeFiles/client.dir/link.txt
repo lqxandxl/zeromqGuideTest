@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/client.dir/client.cpp.o CMakeFiles/client.dir/test.pro.pb.cc.o  -o client  -L/home/liqixin/zmq/lib  -L/home/liqixin/pb/lib -rdynamic -lzmq -lprotobuf -lprotobuf-lite -lprotoc -Wl,-rpath,/home/liqixin/zmq/lib:/home/liqixin/pb/lib 

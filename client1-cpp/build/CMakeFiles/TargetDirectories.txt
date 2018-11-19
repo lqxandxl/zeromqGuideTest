@@ -1,1 +1,0 @@
-/home/liqixin/zmqtest/client1/build/CMakeFiles/client.dir

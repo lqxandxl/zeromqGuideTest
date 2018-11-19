@@ -1,1 +1,0 @@
-/home/liqixin/zeromqGuideTest/server1-c/build/CMakeFiles/server.dir
