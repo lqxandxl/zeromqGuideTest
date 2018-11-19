@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.6)
 
 PROJECT(server)
 
-SET(SRC_LIST server.c)
+SET(SRC_LIST server.cpp)
 
 #build路径以及source路径
 MESSAGE(STATUS "THIS IS BINARY DIR" ${server_BINARY_DIR})

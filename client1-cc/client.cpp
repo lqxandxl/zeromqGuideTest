@@ -18,7 +18,6 @@ int main (void)
     int request_nbr;
     for (request_nbr = 0; request_nbr != 10; request_nbr++) {
         char buffer [10];
-        //printf ("Sending Hello %d…\n", request_nbr);
         std::string sendstring;
         sendstring = "hello liqixin my name is fsc";
         int len1 = sendstring.size();
