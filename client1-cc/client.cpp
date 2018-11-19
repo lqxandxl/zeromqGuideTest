@@ -12,7 +12,7 @@ int main (void)
 {
     void *context = zmq_ctx_new ();
     void *requester = zmq_socket (context, ZMQ_REQ);
-    zmq_connect (requester, "tcp://localhost:5555");
+    zmq_connect (requester, "tcp://localhost:5555"); //类似unix编程，socket和地址进行了绑定
 
     int request_nbr;
     for (request_nbr = 0; request_nbr != 10; request_nbr++) {
