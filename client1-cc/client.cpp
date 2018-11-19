@@ -24,7 +24,7 @@ int main (void)
         cout<<"sendstr length is"<<len1<<endl;
         char * sendstr =(char *)sendstring.c_str();
         //zmq_send (requester, "Hello", 5, 0);
-        zmq_send (requester, sendstr, sendstring.size(), 0);//这个地方很神奇，如果size+1，那么收到的反而是5的长度。不加1，收到的就是6的长度。
+        zmq_send (requester, sendstr, sendstring.size(), 0);
         zmq_recv (requester, buffer, 10, 0);
         std::string res(buffer); //收到字符串的时候，即使服务端返回的长度是5，末尾会多一个未知的字符。
         std::cout<<"res is "<<res<<std::endl;

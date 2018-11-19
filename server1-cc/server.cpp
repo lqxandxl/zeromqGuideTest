@@ -7,7 +7,7 @@
 #include <iostream>
 #include <string>
 
-
+using namespace std;
 
 int main (void)
 {
@@ -20,8 +20,9 @@ int main (void)
 
     while (1) {
         char buffer [100];
-        zmq_recv (responder, buffer, 100, 0);
+        int index = zmq_recv (responder, buffer, 100, 0);
         std::string res(buffer);
+        cout<<"zmq_recv res is "<<index<<endl;
         std::cout<<"res size is "<<res.size()<<std::endl;
         // for(int i=0;i<res.size();i++){
         //     std::cout<<"res[i] is "<<res[i]<<std::endl;
